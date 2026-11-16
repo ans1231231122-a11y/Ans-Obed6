@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GCRP | System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div class="glow"></div>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-icon">G</div>
+        <div>
+          <strong>GCRP</strong>
+          <span>ROLEPLAY SYSTEM</span>
+        </div>
+      </div>
+      <nav id="nav">
+        <button data-page="home" class="nav active">الرئيسية</button>
+        <button data-page="character" class="nav">الشخصية والهوية</button>
+        <button data-page="inventory" class="nav">الحقيبة</button>
+        <button data-page="bank" class="nav">البنك</button>
+        <button data-page="jobs" class="nav">الوظائف</button>
+        <button data-page="police" class="nav">الشرطة</button>
+        <button data-page="prison" class="nav">السجن</button>
+        <button data-page="store" class="nav">المتجر</button>
+        <button data-page="weapons" class="nav">الأسلحة</button>
+        <button data-page="thefts" class="nav">السرقات</button>
+        <button data-page="phone" class="nav">الهاتف</button>
+        <button data-page="cars" class="nav">المركبات</button>
+        <button data-page="rules" class="nav">القوانين</button>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <div class="user-info">
+          <div id="charName">لا توجد شخصية</div>
+          <div id="charJob" class="sub"></div>
+        </div>
+        <div class="money">
+          <div class="money-item"><span>كاش</span><b id="cash">$0</b></div>
+          <div class="money-item"><span>بنك</span><b id="bank">$0</b></div>
+        </div>
+      </header>
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
